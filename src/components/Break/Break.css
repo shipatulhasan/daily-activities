@@ -1,7 +1,16 @@
+.break-btn{
+    
+    display: flex;
+    flex-flow: wrap row;
+    gap: 12px;
+    justify-content: center;
+
+}
+
+
 .break-btn button {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
     border: none;
     color: #000;
     font-size: 15px;
@@ -18,13 +27,13 @@
 }
 
 @media (max-width: 767.98px) { 
-    .break-btn button {
-        margin-right: 8px;
+    .break-btn{
+        gap: 10px;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
-    .break-btn button {
-        margin: 8px;
+    .break-btn{
+        justify-content: start;
     }
 }
  
