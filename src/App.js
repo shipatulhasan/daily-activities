@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import Sidebar from './components/Sidebar/Sidebar';
 
@@ -24,7 +25,7 @@ function App() {
     }
 
   }, [])
-  
+
   let total = 0
   const handleTask = (id) =>{
     const findTask = activities.find(activity=> activity.id === id)
@@ -41,8 +42,13 @@ function App() {
       <div className="main-container">
       <Main activities={activities} handleTask = {handleTask}></Main>
       </div>
+      
       <div className="sidbar-container">
       <Sidebar time = {count}></Sidebar>
+      </div>
+
+      <div className="footer-container">
+      <Footer></Footer>
       </div>
       
     </section>
