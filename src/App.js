@@ -77,12 +77,13 @@ function App() {
 
   return (
     <section className='container'>
-      <div className="main-container">
-      <Main activities={activities} handleTask = {handleTask}></Main>
+     
+      <div className="sidbar-container" data-aos="slide-right" data-aos-once="true" data-aos-delay = "500" data-aos-easing="ease-in-out">
+      <Sidebar time = {count} resetData = {resetData} handleBreak={handleBreak} breakTime={breakTime}></Sidebar>
       </div>
 
-      <div className="sidbar-container">
-      <Sidebar time = {count} resetData = {resetData} handleBreak={handleBreak} breakTime={breakTime}></Sidebar>
+      <div className="main-container">
+      <Main activities={activities} handleTask = {handleTask}></Main>
       </div>
 
       <div className="footer-container">

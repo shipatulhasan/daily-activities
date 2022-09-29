@@ -26,7 +26,7 @@ const Main = ({activities, handleTask}) => {
                    
 
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-once="true" data-aos-delay = "200" data-aos-easing="ease-in-out">
                     <Faq></Faq>
                 </div>
            

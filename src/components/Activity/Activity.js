@@ -4,7 +4,7 @@ import './Activity.css'
 const Activity = ({activity, handleTask}) => {
     const {id,img,title,details,hour} = activity
     return (
-        <div className='card'>
+        <div className='card' data-aos="zoom-in" data-aos-once="true" data-aos-delay = "200" data-aos-easing="ease-in-out">
             <div className="card-body">
                 <img src={img} alt="" />
                 <div className="card-content">

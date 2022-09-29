@@ -12,12 +12,12 @@
   background: rgb(242 244 250);
 }
 .main-container{
-  grid-column: 2/10;
+  grid-column: 4/-1;
   padding: 50px 0;
   
 }
 .sidbar-container{
-  grid-column: 10/-1;
+  grid-column: 1/4;
   background: #fff;
   padding: 50px 20px;
 }
@@ -31,20 +31,22 @@
   }
   .main-container{
     grid-column: 2/-2;
+    order: 1;
     
   }
   .sidbar-container{
     grid-column: 2/-2;
+    order: 2;
     
   }
 }
 @media (min-width: 768px) and (max-width: 1180px) { 
   .main-container{
-    grid-column: 1/9;
+    grid-column: 5/-1;
     
   }
   .sidbar-container{
-    grid-column: 9/-1;
+    grid-column: 1/5;
     
   }
  }
