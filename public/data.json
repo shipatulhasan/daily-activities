@@ -1,0 +1,44 @@
+[
+    {
+      "id": "633484b373301227b45e722d",
+      "img": "https://www.madeenah.com/wp-content/uploads/praying-salah-with-shoulders-uncovered.jpg",
+      "title": "Prayers",
+      "details": "Pray salat 5 times in a day. The Five prayers are Fajar, Dhuhr, Asr, Maghrib, Isha.",
+      "hour": 1.5
+    },
+    {
+      "id": "633484b3dc1bade1f818f63f",
+      "img": "https://m2w4k5m5.stackpathcdn.com/wp-content/uploads/AdobeStock_214691913-1024x683.jpeg",
+      "title": "Reading Quran",
+      "details": "Reading Quran everyDay is a good habit for every Muslims.",
+      "hour": 1
+    },
+    {
+      "id": "633484b3645e62ff9cdce1f0",
+      "img": "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Completing daily lessons",
+      "details": "Completing eveyday module and take notes.",
+      "hour": 3
+    },
+    {
+      "id": "633484b3641bcde75ef51fbc",
+      "img": "https://www.adlibweb.com/wp-content/uploads/2021/08/danial-igdery-FCHlYvR5gJI-unsplash.jpeg.",
+      "title": "Coding practice",
+      "details": "Practicing code and making new project every day.",
+      "hour": 6
+    },
+    {
+      "id": "633484b3bc2a5136a39991ab",
+      "img": "https://imgix.bustle.com/fatherly/2019/01/dad-stretches-header.jpg?w=1200&h=630&fit=crop&crop=focalpoint&fm=jpg&fp-x=0.4987&fp-y=0.3807",
+      "title": "Physical Exercise",
+      "details": "Daily exercise will help to keep fit.",
+      "hour": 1
+    },
+    {
+      "id": "633484b3dc09fb50fb70bb2c",
+      "img": "https://images.squarespace-cdn.com/content/v1/51a615dbe4b0643b1caad822/1543973606266-5EHUKP96ZRTS6ULH4NKA/blog.jpg?format=1000w",
+      "title": "Recreation Time",
+      "details": "Reading blogs or documentions, watch podcust, newses etc...",
+      "hour": 2
+    }
+  ]
