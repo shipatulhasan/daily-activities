@@ -10,7 +10,7 @@ const User = () => {
             <div className="user-info">
                 <img src={user} alt="" />
                     <div className="details">
-                        <h1>Daily Activities</h1>
+                        <h1>Md. Shipaul Hasan Shakib</h1>
                         <p><FontAwesomeIcon icon={faMapMarker} /> Hathazari,Chittagong</p>
                     </div>
             </div>

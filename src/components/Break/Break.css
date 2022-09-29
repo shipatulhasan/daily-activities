@@ -16,3 +16,10 @@
     color:whitesmoke;
     background:#5A20CB;
 }
+
+@media (max-width: 767.98px) { 
+    .break-btn button {
+        margin-right: 8px;
+    }
+}
+ 
