@@ -14,13 +14,26 @@ function App() {
 
   }, [])
 
-  const [time,setTime] = useState(0)
+  const [count,setCount] = useState(0)
+
+  useEffect(()=>{
+
+    const storedCount =JSON.parse(localStorage.getItem('activities-time')) 
+    if(storedCount){
+      setCount(storedCount)
+    }
+
+  }, [])
+  
+  let total = 0
   const handleTask = (id) =>{
     const findTask = activities.find(activity=> activity.id === id)
 
     if(findTask){
-      setTime((curr)=>curr + findTask.hour)
+      total = count + findTask.hour
+      setCount(total)
     }
+    localStorage.setItem('activities-time',total)
   } 
 
   return (
@@ -29,7 +42,7 @@ function App() {
       <Main activities={activities} handleTask = {handleTask}></Main>
       </div>
       <div className="sidbar-container">
-      <Sidebar time = {time}></Sidebar>
+      <Sidebar time = {count}></Sidebar>
       </div>
       
     </section>
