@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import SingleFaq from '../../SingleFaq/SingleFaq';
+import SingleFaq from '../SingleFaq/SingleFaq';
 
 const Faq = () => {
     const [blogs, setBlogs] = useState([])

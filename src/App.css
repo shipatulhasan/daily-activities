@@ -32,3 +32,13 @@
     
   }
 }
+@media (min-width: 768px) and (max-width: 1180px) { 
+  .main-container{
+    grid-column: 1/9;
+    
+  }
+  .sidbar-container{
+    grid-column: 9/-1;
+    
+  }
+ }

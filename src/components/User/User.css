@@ -26,8 +26,7 @@
     padding: 30px 0 20px 0;
 }
 .user-details h3{
-    font-size: 30px;
-    
+    font-size: 30px;  
 }
 .user-details h3 sub{
     font-size: 16px;
@@ -38,4 +37,13 @@
     font-size: 16px;
     font-weight: 500;
     color: rgb(105, 132, 145);
+}
+
+@media (min-width: 768px) and (max-width: 1180px){
+    .user-info p{
+        font-size: 12px;
+    }
+    .user-info h1{
+        font-size: 14px;
+    }
 }

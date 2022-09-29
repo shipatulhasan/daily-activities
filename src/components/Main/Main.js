@@ -15,6 +15,7 @@ const Main = ({activities, handleTask}) => {
                 <div className="description">
                     <p>Select your today's task</p>
                 </div>
+            </div>
             <div className="activities-container">
                     {
                         activities.map(activity=><Activity 
@@ -28,7 +29,7 @@ const Main = ({activities, handleTask}) => {
                 <div>
                     <Faq></Faq>
                 </div>
-            </div>
+           
         </section>
     );
 };

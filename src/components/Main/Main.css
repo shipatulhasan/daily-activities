@@ -39,3 +39,13 @@
         font-size: 30px;
     }
  }
+ @media (min-width: 768px) and (max-width: 1180px) { 
+    .activities-container{
+        padding: 30px 20px;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .header{
+        padding: 0 20px;
+    }
+   }
