@@ -1,8 +1,8 @@
-
 import logo from '../../daily-tasks.png'
+import Activity from '../Activity/Activity';
 import './Main.css'
 
-const Main = () => {
+const Main = ({activities}) => {
    
     return (
         <section>
@@ -14,7 +14,16 @@ const Main = () => {
                 <div className="description">
                     <p>Select your today's task</p>
                 </div>
-                
+            <div className="activities-container">
+                    {
+                        activities.map(activity=><Activity 
+                            activity={activity}
+                            key={activity.id}
+                            ></Activity>)
+                    }
+                   
+
+                </div>
             </div>
         </section>
     );
