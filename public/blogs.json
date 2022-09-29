@@ -1,0 +1,20 @@
+[
+    {
+      "id": "100a2",
+      "qu": "How does reactjs work ?",
+      "ans": "React js is a most popular javascript library. It's a component base libray. React will work based on four things. 1. reconciliation, 2. Virtual dom, 3. Rendering, 4. Diffing algorithm. So First of all react complied all the jsx(JSX stands for JavaScript XML. JSX allows us to write HTML in React) file using Bebel compiler. Then it'll make an exact copy of real dom elemet in it's virtual dom. Then render them and finally update them in Real dom."
+      
+    },
+    {
+      "id": "100b4",
+      "qu": "Difference between Props and States ?",
+      "ans": "Props can read only --- State changes be asynchronous Props cann't be modified --- State can be modified using this.setState."
+      
+    },
+    {
+      "id": "100c6",
+      "qu": "What is the use of useEffect execpt fetching data ?",
+      "ans": "useEffect is use to handle site effect in react js. Some usage of useEffect() is 1. fetch Api, 2. Run timer, 3. Live filtering, 4. Trigger animation etc."
+      
+    }
+]

@@ -1,5 +1,6 @@
 import logo from '../../daily-tasks.png'
 import Activity from '../Activity/Activity';
+import Faq from '../Faq/Faq';
 import './Main.css'
 
 const Main = ({activities, handleTask}) => {
@@ -23,6 +24,9 @@ const Main = ({activities, handleTask}) => {
                     }
                    
 
+                </div>
+                <div>
+                    <Faq></Faq>
                 </div>
             </div>
         </section>
