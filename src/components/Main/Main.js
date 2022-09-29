@@ -2,7 +2,7 @@ import logo from '../../daily-tasks.png'
 import Activity from '../Activity/Activity';
 import './Main.css'
 
-const Main = ({activities}) => {
+const Main = ({activities, handleTask}) => {
    
     return (
         <section>
@@ -17,7 +17,7 @@ const Main = ({activities}) => {
             <div className="activities-container">
                     {
                         activities.map(activity=><Activity 
-                            activity={activity}
+                            activity={activity} handleTask={handleTask}
                             key={activity.id}
                             ></Activity>)
                     }

@@ -14,13 +14,22 @@ function App() {
 
   }, [])
 
+  const [time,setTime] = useState(0)
+  const handleTask = (id) =>{
+    const findTask = activities.find(activity=> activity.id === id)
+
+    if(findTask){
+      setTime((curr)=>curr + findTask.hour)
+    }
+  } 
+
   return (
     <section className='container'>
       <div className="main-container">
-      <Main activities={activities}></Main>
+      <Main activities={activities} handleTask = {handleTask}></Main>
       </div>
       <div className="sidbar-container">
-      <Sidebar></Sidebar>
+      <Sidebar time = {time}></Sidebar>
       </div>
       
     </section>

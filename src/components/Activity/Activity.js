@@ -1,7 +1,7 @@
 import React from 'react';
 import './Activity.css'
 
-const Activity = ({activity}) => {
+const Activity = ({activity, handleTask}) => {
     const {id,img,title,details,hour} = activity
     return (
         <div className='card'>
@@ -19,7 +19,7 @@ const Activity = ({activity}) => {
             </div>
 
             <div className="card-footer">  
-                <button>
+            <button onClick={()=>handleTask(id)}>
                     <p>Add to list</p>
                      </button>
 
