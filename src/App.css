@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 767.98px) { 
+  .sidbar-container{
+    margin-bottom: 20px;
+  }
   .main-container{
     grid-column: 2/-2;
     

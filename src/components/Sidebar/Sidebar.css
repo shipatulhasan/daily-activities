@@ -39,6 +39,21 @@
         background: #1FAA59;
         cursor: pointer;
     }
+    .reset-btn{
+        width: 100%;
+        background: #D82E2F;
+        color: whitesmoke;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .reset-btn:hover{
+        background: #E21717;
+    }
 
     @media (max-width: 767.98px) { 
         .break{

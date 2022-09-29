@@ -1,34 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Break from '../Break/Break';
 import User from '../User/User';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import './Sidebar.css'
 
-const Sidebar = ({time}) => {
+const Sidebar = ({time, resetData, breakTime, handleBreak}) => {
 
     const notify = () => toast("Wow you have completed today's activity.!");
 
-    const [breakTime, setBreaktime] = useState("0m")
-
-
-    useEffect(()=>{
-        const storedVlue = localStorage.getItem('Break-time')
-        if(storedVlue){
-            
-            setBreaktime(storedVlue)
-        }
-    }, [])
-
-    const handleBreak = (e)=>{
-
-        const breakCount = (e.target.innerText)
-
-        localStorage.setItem('Break-time',breakCount)
-
-        setBreaktime(breakCount)
-
-    }
     return (
         <section className='sidebar-container'>
             <User></User>
@@ -38,7 +18,9 @@ const Sidebar = ({time}) => {
             <div className='break'>
             <Break handleBreak={handleBreak}></Break>
             </div>
+
             {/* time count section */}
+
             <h4 className='title'>Activities Details</h4> 
             <div className='time-count'>
             <h5>Activities Time:</h5> <span> {time} hour</span>
@@ -51,6 +33,7 @@ const Sidebar = ({time}) => {
                     <p>Task completed</p>
                     <ToastContainer />
                      </button>
+                <button className='reset-btn' onClick={resetData}>Reset</button>
 
         </section>
     );
