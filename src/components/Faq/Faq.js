@@ -15,7 +15,7 @@ const Faq = () => {
 
 
     return (
-        <div className='activities-container'>
+        <div className='activities-container' >
             {
                 blogs.map(blog=><SingleFaq blog={blog} key={blog.id}></SingleFaq>)
             }
