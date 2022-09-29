@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import user from '../../profile.jpg'
 import Break from '../Break/Break';
+import User from '../User/User';
 import './Sidebar.css'
 
 const Sidebar = ({time}) => {
 
-    const [breakTime, setBreaktime] = useState("0")
+    const [breakTime, setBreaktime] = useState("0m")
 
     useEffect(()=>{
         const storedVlue = localStorage.getItem('Break-time')
@@ -25,18 +25,28 @@ const Sidebar = ({time}) => {
 
     }
     return (
-        <main className='sidebar-container'>
-            <section className="user-info">
-                <img src={user} alt="" />
-                    <div className="details">
-                        <h1>Daily Activities</h1>
-                        <p>Select your today's task</p>
-                    </div>
-            </section>
-            <p>Activities Time: {time} hour</p>
-            <p>Break: {breakTime} minute</p>
+        <section className='sidebar-container'>
+            <User></User>
+
+            {/* break button */}
+            <h4 className='title'>Add a Break</h4> 
+            <div className='break'>
             <Break handleBreak={handleBreak}></Break>
-        </main>
+            </div>
+            {/* time count section */}
+            <h4 className='title'>Activities Details</h4> 
+            <div className='time-count'>
+            <h5>Activities Time:</h5> <span> {time} hour</span>
+            </div>
+            <div className='time-count'>
+            <h5>Break: </h5><span> {breakTime}inute</span>
+            </div>
+
+            <button className='completed-btn'>
+                    <p>Task completed</p>
+                     </button>
+
+        </section>
     );
 };
 
